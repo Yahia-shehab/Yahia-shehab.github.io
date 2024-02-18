@@ -1,0 +1,343 @@
+.navbar-brand img {
+    width: 10vw;
+    border-radius: 75%;
+    height: 10vw;
+}
+
+.d-flex {
+    width: 50vw;
+}
+
+
+button {
+    background-color: #212529;
+    color: white;
+    margin: 10vw;
+}
+
+#about {
+    margin-left: 12px;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+    padding-left: 3.5vw;
+    padding-right: 3vw;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+
+#Contact {
+    margin-left: 12px;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+#Reviews {
+    margin-left: 12px;
+    margin-top: 2.5vw;
+    margin-bottom: 2.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 14px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+#Reviewsquotes {
+    border-style: solid;
+    margin-left: px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 20vw;
+}
+
+img {
+    width: 100vw;
+}
+
+button:hover {
+    background-color: #191a1b;
+    border-width: 0.3vw;
+}
+
+.content {
+    margin-top: 11%;
+}
+
+#Meals {
+    width: 95%;
+    background-color: white;
+    color: black;
+}
+
+#photo {
+    width: 25vw;
+    margin-left: 11%;
+    margin-top: 4vw;
+}
+
+
+
+#order {
+    background: red;
+    color: black;
+    border-radius: 5px;
+    width: 35vw;
+}
+
+#orderedText {
+    color: lightgreen;
+}
+
+/* Popup container */
+.popup {
+    text-align: center;
+    position: static;
+    margin-top: -50%;
+    z-index: 2;
+    color: rgb(88, 48, 48);
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    z-index: 1;
+    position: absolute;
+    margin-right: 90%;
+    width: 70%;
+    margin-left: -35%;
+    background-color: rgb(32, 27, 27);
+
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    top: 100%;
+    left: 50%;
+    position: relative;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.popimg {
+    margin-top: 2%;
+    height: 25vw;
+    width: 30vw;
+}
+
+#sizes:hover {
+    color: lightblue;
+    cursor: pointer
+}
+
+#sizes:active {
+    background-color: lightblue;
+    color: black;
+}
+
+#Quantity {
+    background-color: black;
+    color: white;
+    margin-bottom: 1vw;
+}
+
+#location {
+    background-color: black;
+    color: white;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+input {
+    size: 80%;
+}
+
+.OrderSuccesful {
+    font-size: 4vw;
+    color: lightgreen;
+}
+
+#Complete {
+    margin-top: 3vw;
+    background-color: rgb(13, 12, 59);
+    width: 20vw;
+    height: 7vw;
+    border-radius: 10px;
+    font-size: 2.3vw;
+}
+
+#Confirm {
+    border-radius: 10px;
+}
+
+#ConfirmLocation {
+    border-radius: 10px;
+}
+
+.Sandwiches {
+    font-size: x-large;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+.Sandwiches_b {
+    margin-top: 55%;
+    font-size: x-large;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+#sandwich {
+    color: #FC6736;
+    font-size: 35px;
+    margin-left: 1vw;
+    margin-top: 5vw;
+}
+
+.Pizza {
+    font-size: x-large;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+#dishes {
+    font-size: 40px;
+}
+
+#pizza {
+    color: #FC6736;
+    font-size: 35px;
+    margin-left: 1vw;
+}
+
+.Pizza_b {
+    margin-top: 55%;
+    font-size: x-large;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+#Fattah {
+    color: #FC6736;
+    font-size: 35px;
+    margin-left: 1vw;
+}
+
+.Fattah {
+    font-size: x-large;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+.Fattah_b {
+    margin-top: 55%;
+    font-size: x-large;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+#line {
+    text-align: center;
+    margin-top: 50%;
+    font-size: 8vw;
+    color: #0C2D57;
+}
+
+footer {
+    margin-top: 52%;
+    background-color: black;
+    color: white;
+    height: 34px;
+}
+
+#Title {
+    color: white;
+    font-size: 4vw;
+}
+
+
+#Offers {
+    color: #FC6736;
+    font-size: 35px;
+    margin-left: 1vw;
+}
+
+.offers {
+    font-size: x-large;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 2vw;
+}
+
+.offers_b {
+    font-size: x-large;
+    border: 3px black solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 3vw;
+    margin-left: 2vw;
+    margin-top: 55%;
+}
+
+#facebookphoto {
+    height: 20px;
+    width: 20px;
+}

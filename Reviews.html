@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: orangered;
+        }
+
+        h3 {
+            border: 2px black solid;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #Back {
+            text-align: center;
+            margin-top: 2vw;
+
+            width: 300px;
+            background-color: rgb(236, 234, 234);
+            border-radius: 10px;
+            font-size: 17px;
+            height: 35px;
+            margin-left: 40%;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(204, 195, 195);
+            height: 55px;
+            margin-top: 150px;
+        }
+
+        button {
+            height: 50px;
+            width: 140px;
+            border-radius: 10px;
+            background-color: rgb(190, 185, 185);
+            color: black;
+            font-size: 15px;
+            margin-top: 20px;
+            margin-bottom: 1px;
+        }
+
+        p {
+            font-size: 40px;
+            color: lightgreen;
+        }
+
+        textarea {
+            font-size: 20px;
+            width: 90%;
+        }
+
+        h4 {
+            border: 2px black solid;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        button:hover {
+            background-color: rgb(134, 126, 126);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Reviews :</h1>
+    <h3 id="Reviewsquotes">
+        <h2>🦱 Amazing</h2>
+        <h3> lovely tasty egyptian food , very
+            fresh and good prices fresh bread. you need
+            to speak arabic to get the real price though</h3>
+        <h2>⭐⭐⭐⭐⭐</h2>
+
+        <h3 id="Reviewsquotes">
+            <h2>🦰 Very good place</h2>
+            <h3> the food was very delicious ,the atmosphere was quit
+                .service was good and it was an organized place</h3>
+            <h2>⭐⭐⭐⭐⭐</h2>
+            <h3 id="Reviewsquotes">
+                <h2>🦱 Rude service</h2>
+                <h3> Halfway Between restaurant and fast food chain.
+                    Not very atmospheric. Egyptian food tasty.
+                    Plenty of choice. Pizza we had not great.
+                    Brought other dish than we ordered,
+                    of course more expensive.
+                    Had to discuss this with 3 people,
+                    last one became rude. Had too pay most expensive one.
+                    Welcoming was also not particularly friendly.</h3>
+                <h2>⭐⭐⭐★★</h2>
+                <h3>
+                    <h2>🦱 Your Review</h2>
+                    <h4><textarea class="input" rows="10" cols="70"></textarea>
+                        <button onclick="SubmitReview()"><b>Submit Review</b></button>
+                        <p id="YourReview"></p>
+                    </h4>
+                    <button id="Back"><a href="./Index.html">Back To Menu</a></button>
+                    <footer>
+                        <p class="float-end"><a href="#">Back to top</a></p>
+                    </footer>
+                    <script src="./Main.js"></script>
+
+</html>
