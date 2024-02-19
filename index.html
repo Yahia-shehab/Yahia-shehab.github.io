@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abou Reyad El Soury</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="./Abou Reyad El Soury.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <h1 id="Title">Abou Reyad El Soury</h1>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <button id="about"><a href="./About Us.html">About Us</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="Contact"><a href="./Contact Us.html">Contact Us</a></button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="Reviews"><a href="./Reviews.html">Reviews</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <img src="./Abou Reyad El Soury photo.png" alt="">
+    </div>
+
+    <div>
+        <div class="menuItem">
+            <h1 id="dishes"><u>Dishes</u></h1>
+            <h2 id="Offers"><u><b>Limited Offers :</b></u></h2>
+            <div class="offers">
+                <h3 id="Meals">4 piece crispy chicken+fries+garlic sauce :
+                    <br>
+                    <img src="./Offer1.jpg" alt="" id="photo">
+                    <br><br> 80 EGP <button onclick="Open('Offer1popup')" id="order">Order</button>
+                    <br>
+                    <h3 id="orderedText12" class="OrderSuccesful"></h3>
+                </h3>
+            </div>
+            <div class="popup">
+                <span class="popuptext" id="Offer1popup">
+                    <div>
+                        <img src="./Offer1.jpg" alt="" class="popimg">
+                        <h2>Chicken Shawerma Sandwich</h2>
+                        <div>
+                            <h6 id="sizes" onclick="order(80)">Regular : 80.00 EGP</h6>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Quantity :</u></h1>
+                            <input id="num12" type="number" placeholder="type a number" id="Quantity">
+                            <button onclick="Quantity('num12')" id="Confirm">Confirm</button>
+                            <br>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Location :</u></h1>
+                            <input id="num12" type="" placeholder="type your location" id="Location">
+                            <button onclick="location('num12')" id="ConfirmLocation">Confirm</button>
+                            <br>
+                            <button onclick="SuccessfullOrder('Offer1popup', 'orderedText12')" id="Complete">Complete
+                                Order</button>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+
+        <div class="offers_b">
+            <h3 id="Meals">4 piece chicken Shawerma+ 2 piece chicken burger+fries+garlic sauce :
+                <br>
+                <img src="./Offer2.jpg" alt="" id="photo">
+                <br><br> 95 EGP <button onclick="Open('Offer2popup')" id="order">Order</button>
+                <br>
+                <h3 id="orderedText13" class="OrderSuccesful"></h3>
+            </h3>
+        </div>
+        <div class="popup">
+            <span class="popuptext" id="Offer2popup">
+                <div>
+                    <img src="./Offer2.jpg" alt="" class="popimg">
+                    <h2>Chicken Shawerma Sandwich</h2>
+                    <div>
+                        <h6 id="sizes" onclick="order(95)">Regular : 95.00 EGP</h6>
+                        <h1>_____________________________________</h1>
+                        <h1><u>Quantity :</u></h1>
+                        <input id="num13" type="number" placeholder="type a number" id="Quantity">
+                        <button onclick="Quantity('num13')" id="Confirm">Confirm</button>
+                        <br>
+                        <h1>_____________________________________</h1>
+                        <h1><u>Location :</u></h1>
+                        <input id="num13" type="" placeholder="type your location" id="Location">
+                        <button onclick="location('num13')" id="ConfirmLocation">Confirm</button>
+                        <br>
+                        <button onclick="SuccessfullOrder('Offer2popup', 'orderedText13')" id="Complete">Complete
+                            Order</button>
+                        <h3></h3>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+
+
+
+
+
+    <h2 id="line">_____________________________________________</h2>
+
+    <h2 id="sandwich"><u><b>Sandwiches :</b></u></h2>
+    <div class="Sandwiches">
+        <h3 id="Meals">Chicken Shawerma :
+            <img src="./Chicken Shawerma.jpg" alt="" id="photo">
+            <br><br> 55 - 80 EGP <button onclick="Open('chickenSHpopup')" id="order">Order</button>
+            <br>
+            <h3 id="orderedText" class="OrderSuccesful"></h3>
+        </h3>
+    </div>
+    <div class="popup">
+        <span class="popuptext" id="chickenSHpopup">
+            <div>
+                <img src="./Chicken Shawerma.jpg" alt="" class="popimg">
+                <h2>Chicken Shawerma Sandwich</h2>
+                <div>
+                    <h6 id="sizes" onclick="order(55)">Medium : 55.00 EGP</h6>
+                    <h6 id="sizes" onclick="order(74)">Large : 74.00 EGP</h6>
+                    <h6 id="sizes" onclick="order(80)">XLarge : 80.00 EGP</h6>
+                    <h1>_____________________________________</h1>
+                    <h1><u>Quantity :</u></h1>
+                    <input id="num1" type="number" placeholder="type a number" id="Quantity">
+                    <button onclick="Quantity('num1')" id="Confirm">Confirm</button>
+                    <br>
+                    <h1>_____________________________________</h1>
+                    <h1><u>Location :</u></h1>
+                    <input id="num1" type="" placeholder="type your location" id="Location">
+                    <button onclick="location('num1')" id="ConfirmLocation">Confirm</button>
+                    <br>
+                    <button onclick="SuccessfullOrder('chickenSHpopup', 'orderedText')" id="Complete">Complete
+                        Order</button>
+                    <h3></h3>
+                </div>
+            </div>
+        </span>
+    </div>
+    </div>
+
+
+    <div>
+        <div class="Sandwiches_b">
+            <h3 id="Meals">Beef Shawerma :
+                <img src="./Beaf Shawerma.jpg" alt="" id="photo">
+                <br><br> 61 - 91 EGP <button onclick="Open('beefshawermapopup')" id="order">Order</button>
+                <br>
+                <h3 id="orderedText2" class="OrderSuccesful"></h3>
+            </h3>
+        </div>
+        <div class="popup">
+            <span class="popuptext" id="beefshawermapopup">
+                <div>
+                    <img src="./Beaf Shawerma.jpg" alt="" class="popimg">
+                    <h2>Beef Shawerma Sandwich</h2>
+                    <div>
+                        <h6 id="sizes" onclick="order(61)">Medium : 61.00 EGP</h6>
+                        <h6 id="sizes" onclick="order(86)">Large : 86.00 EGP</h6>
+                        <h6 id="sizes" onclick="order(91)">XLarge : 91.00 EGP</h6>
+                        <h1>_____________________________________</h1>
+                        <h1><u>Quantity :</u></h1>
+                        <input id="num2" type="number" placeholder="type a number" id="Quantity">
+                        <button onclick="Quantity('num2')" id="Confirm">Confirm</button>
+                        <br>
+                        <h1>_____________________________________</h1>
+                        <h1><u>Location :</u></h1>
+                        <input id="num2" type="" placeholder="type your location" id="Location">
+                        <button onclick="location('num2')" id="ConfirmLocation">Confirm</button>
+                        <br>
+                        <button onclick="SuccessfullOrder('beefshawermapopup', 'orderedText2')" id="Complete">Complete
+                            Order</button>
+                        <h3></h3>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="Sandwiches_b">
+            <h3 id="Meals">French Fries :
+                <img src="./French fries.jpg" alt="" id="photo">
+                <br><br> 33 - 38 EGP <button onclick="Open('FrenchFriespopup')" id="order">Order</button>
+                <br>
+                <h3 id="orderedText3" class="OrderSuccesful"></h3>
+            </h3>
+        </div>
+        <div class="popup">
+            <span class="popuptext" id="FrenchFriespopup">
+                <div>
+                    <img src="./French fries.jpg" alt="" class="popimg">
+                    <h2>French Fries Sandwich</h2>
+                    <div>
+                        <h6 id="sizes" onclick="order(33)">Medium : 33.00 EGP</h6>
+                        <h6 id="sizes" onclick="order(38)">XLarge : 38.00 EGP</h6>
+                        <h1>_____________________________________</h1>
+                        <h1><u>Quantity :</u></h1>
+                        <input id="num3" type="number" placeholder="type a number" id="Quantity">
+                        <button onclick="Quantity('num3')" id="Confirm">Confirm</button>
+                        <br>
+                        <h1>_____________________________________</h1>
+                        <h1><u>Location :</u></h1>
+                        <input id="num3" type="" placeholder="type your location" id="Location">
+                        <button onclick="location('num3')" id="ConfirmLocation">Confirm</button>
+                        <br>
+                        <button onclick="SuccessfullOrder('FrenchFriespopup', 'orderedText3')" id="Complete">Complete
+                            Order</button>
+                        <h3></h3>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="Sandwiches_b">
+            <h3 id="Meals">Spicy Mexican Chicken :
+                <img src="./Spicy Mexican Chicken Sandwich .jpg" alt="" id="photo">
+                <br><br> 75 EGP <button onclick="Open('SpicyMexicanpopup')" id="order">Order</button>
+                <br>
+                <h3 id="orderedText4" class="OrderSuccesful"></h3>
+            </h3>
+        </div>
+        <div class="popup">
+            <span class="popuptext" id="SpicyMexicanpopup">
+                <div>
+                    <img src="./Spicy Mexican Chicken Sandwich .jpg" alt="" class="popimg">
+                    <h2>Spicy Mexican Chicken Sandwich</h2>
+                    <div>
+                        <h6 id="sizes" onclick="order(75)">Regular : 75.00 EGP</h6>
+                        <h1>_____________________________________</h1>
+                        <h1><u>Quantity :</u></h1>
+                        <input id="num4" type="number" placeholder="type a number" id="Quantity">
+                        <button onclick="Quantity('num4')" id="Confirm">Confirm</button>
+                        <br>
+                        <h1>_____________________________________</h1>
+                        <h1><u>Location :</u></h1>
+                        <input id="num4" type="" placeholder="type your location" id="Location">
+                        <button onclick="location('num4')" id="ConfirmLocation">Confirm</button>
+                        <br>
+                        <button onclick="SuccessfullOrder('SpicyMexicanpopup', 'orderedText4')" id="Complete">Complete
+                            Order</button>
+                        <h3></h3>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+    </ul>
+    </div>
+
+
+    <div>
+        <div class="menuItem">
+            <h2 id="line">_____________________________________________</h2>
+            <h2 id="pizza"><u><b>Pizza :</b></u></h2>
+            <div class="Pizza">
+                <h3 id="Meals">Margherita Pizza :
+                    <img src="./Margerita Pizza.jpg" alt="" id="photo">
+                    <br><br> 85 - 95 EGP <button onclick="Open('Margeritapopup')" id="order">Order</button>
+                    <br>
+                    <h3 id="orderedText5" class="OrderSuccesful"></h3>
+                </h3>
+            </div>
+            <div class="popup">
+                <span class="popuptext" id="Margeritapopup">
+                    <div>
+                        <img src="./Margerita Pizza.jpg" alt="" class="popimg">
+                        <h2>Margherita Pizza</h2>
+                        <div>
+                            <h6 id="sizes" onclick="order(85)">Medium : 85.00 EGP</h6>
+                            <h6 id="sizes" onclick="order(95)">Large : 95.00 EGP</h6>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Quantity :</u></h1>
+                            <input id="num5" type="number" placeholder="type a number" id="Quantity">
+                            <button onclick="Quantity('num5')" id="Confirm">Confirm</button>
+                            <br>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Location :</u></h1>
+                            <input id="num5" type="" placeholder="type your location" id="Location">
+                            <button onclick="location('num5')" id="ConfirmLocation">Confirm</button>
+                            <br>
+                            <button onclick="SuccessfullOrder('Margeritapopup', 'orderedText5')" id="Complete">Complete
+                                Order</button>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="Pizza_b">
+                <h3 id="Meals">Four Seasons Pizza :
+                    <img src="./four season pizza.jpg" alt="" id="photo">
+                    <br><br> 92 - 105 EGP <button onclick="Open('FourSeasonpopup')" id="order">Order</button>
+                    <br>
+                    <h3 id="orderedText6" class="OrderSuccesful"></h3>
+                </h3>
+            </div>
+            <div class="popup">
+                <span class="popuptext" id="FourSeasonpopup">
+                    <div>
+                        <img src="./four season pizza.jpg" alt="" class="popimg">
+                        <h2>Four Seasons Pizza</h2>
+                        <div>
+                            <h6 id="sizes" onclick="order(92)">Medium : 92.00 EGP</h6>
+                            <h6 id="sizes" onclick="order(105)">Large : 105.00 EGP</h6>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Quantity :</u></h1>
+                            <input id="num6" type="number" placeholder="type a number" id="Quantity">
+                            <button onclick="Quantity('num6')" id="Confirm">Confirm</button>
+                            <br>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Location :</u></h1>
+                            <input id="num6" type="" placeholder="type your location" id="Location">
+                            <button onclick="location('num6')" id="ConfirmLocation">Confirm</button>
+                            <br>
+                            <button onclick="SuccessfullOrder('FourSeasonpopup', 'orderedText6')" id="Complete">Complete
+                                Order</button>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="Pizza_b">
+                <h3 id="Meals">Pastrami Pizza :
+                    <img src="./pastrami pizza.jpg" alt="" id="photo">
+                    <br><br> 110 - 125 EGP <button onclick="Open('pastramipopup')" id="order">Order</button>
+                    <br>
+                    <h3 id="orderedText7" class="OrderSuccesful"></h3>
+                </h3>
+            </div>
+            <div class="popup">
+                <span class="popuptext" id="pastramipopup">
+                    <div>
+                        <img src="./pastrami pizza.jpg" alt="" class="popimg">
+                        <h2>Pastrami Pizza</h2>
+                        <div>
+                            <h6 id="sizes" onclick="order(110)">Medium : 110.00 EGP</h6>
+                            <h6 id="sizes" onclick="order(125)">Large : 125.00 EGP</h6>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Quantity :</u></h1>
+                            <input id="num7" type="number" placeholder="type a number" id="Quantity">
+                            <button onclick="Quantity('num7')" id="Confirm">Confirm</button>
+                            <br>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Location :</u></h1>
+                            <input id="num7" type="" placeholder="type your location" id="Location">
+                            <button onclick="location('num7')" id="ConfirmLocation">Confirm</button>
+                            <br>
+                            <button onclick="SuccessfullOrder('pastramipopup', 'orderedText7')" id="Complete">Complete
+                                Order</button>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="Pizza_b">
+                <h3 id="Meals">Mix Cheese Pizza :
+                    <img src="./Mix cheese pizza.jpg" alt="" id="photo">
+                    <br><br> 100 - 115 EGP <button onclick="Open('mixcheesepopup')" id="order">Order</button>
+                    <br>
+                    <h3 id="orderedText8" class="OrderSuccesful"></h3>
+                </h3>
+            </div>
+            <div class="popup">
+                <span class="popuptext" id="mixcheesepopup">
+                    <div>
+                        <img src="./Mix cheese pizza.jpg" alt="" class="popimg">
+                        <h2>Mix Cheese Pizza</h2>
+                        <div>
+                            <h6 id="sizes" onclick="order(100)">Medium : 100.00 EGP</h6>
+                            <h6 id="sizes" onclick="order(100)">Large : 115.00 EGP</h6>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Quantity :</u></h1>
+                            <input id="num8" type="number" placeholder="type a number" id="Quantity">
+                            <button onclick="Quantity('num8')" id="Confirm">Confirm</button>
+                            <br>
+                            <h1>_____________________________________</h1>
+                            <h1><u>Location :</u></h1>
+                            <input id="num8" type="" placeholder="type your location" id="Location">
+                            <button onclick="location('num8')" id="ConfirmLocation">Confirm</button>
+                            <br>
+                            <button onclick="SuccessfullOrder('mixcheesepopup', 'orderedText8')" id="Complete">Complete
+                                Order</button>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="menuItem">
+                <h2 id="line">_____________________________________________</h2>
+                <h2 id="Fattah"><u><b>Fattah :</b></u></h2>
+                <div class="Fattah">
+                    <h3 id="Meals">Chicken Shawerma fattah :
+                        <img src="./chickenf.jpg" alt="" id="photo">
+                        <br><br> 92 - 105 EGP <button onclick="Open('chickenfpopup')" id="order">Order</button>
+                        <br>
+                        <h3 id="orderedText9" class="OrderSuccesful"></h3>
+                    </h3>
+                </div>
+                <div class="popup">
+                    <span class="popuptext" id="chickenfpopup">
+                        <div>
+                            <img src="./chickenf.jpg" alt="" class="popimg">
+                            <h2>Margherita Pizza</h2>
+                            <div>
+                                <h6 id="sizes" onclick="order(92)">Medium : 92.00 EGP</h6>
+                                <h6 id="sizes" onclick="order(105)">Large : 105.00 EGP</h6>
+                                <h1>_____________________________________</h1>
+                                <h1><u>Quantity :</u></h1>
+                                <input id="num9" type="number" placeholder="type a number" id="Quantity">
+                                <button onclick="Quantity('num9')" id="Confirm">Confirm</button>
+                                <br>
+                                <h1>_____________________________________</h1>
+                                <h1><u>Location :</u></h1>
+                                <input id="num9" type="" placeholder="type your location" id="Location">
+                                <button onclick="location('num9')" id="ConfirmLocation">Confirm</button>
+                                <br>
+                                <button onclick="SuccessfullOrder('chickenfpopup', 'orderedText9')"
+                                    id="Complete">Complete
+                                    Order</button>
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="Fattah_b">
+                    <h3 id="Meals">Meat Shawerma Fattah :
+                        <img src="./meatf.jpg" alt="" id="photo">
+                        <br><br> 105 - 115 EGP <button onclick="Open('meatfpopup')" id="order">Order</button>
+                        <br>
+                        <h3 id="orderedText10" class="OrderSuccesful"></h3>
+                    </h3>
+                </div>
+                <div class="popup">
+                    <span class="popuptext" id="meatfpopup">
+                        <div>
+                            <img src="./meatf.jpg" alt="" class="popimg">
+                            <h2>Mix Cheese Pizza</h2>
+                            <div>
+                                <h6 id="sizes" onclick="order(105)">Medium : 105.00 EGP</h6>
+                                <h6 id="sizes" onclick="order(115)">Large : 115.00 EGP</h6>
+                                <h1>_____________________________________</h1>
+                                <h1><u>Quantity :</u></h1>
+                                <input id="num10" type="number" placeholder="type a number" id="Quantity">
+                                <button onclick="Quantity('num10')" id="Confirm">Confirm</button>
+                                <br>
+                                <h1>_____________________________________</h1>
+                                <h1><u>Location :</u></h1>
+                                <input id="num10" type="" placeholder="type your location" id="Location">
+                                <button onclick="location('num10')" id="ConfirmLocation">Confirm</button>
+                                <br>
+                                <button onclick="SuccessfullOrder('meatfpopup', 'orderedText10')" id="Complete">Complete
+                                    Order</button>
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="Fattah_b">
+                    <h3 id="Meals">Chicken Panne Fattah :
+                        <img src="./Chicken Panne Fattah.jpg" alt="" id="photo">
+                        <br><br> 80 - 92 EGP <button onclick="Open('ChickenPpopup')" id="order">Order</button>
+                        <br>
+                        <h3 id="orderedText11" class="OrderSuccesful"></h3>
+                    </h3>
+                </div>
+                <div class="popup">
+                    <span class="popuptext" id="ChickenPpopup">
+                        <div>
+                            <img src="./Chicken Panne Fattah.jpg" alt="" class="popimg">
+                            <h2>Mix Cheese Pizza</h2>
+                            <div>
+                                <h6 id="sizes" onclick="order(80)">Medium : 80.00 EGP</h6>
+                                <h6 id="sizes" onclick="order(92)">Large : 92.00 EGP</h6>
+                                <h1>_____________________________________</h1>
+                                <h1><u>Quantity :</u></h1>
+                                <input id="num11" type="number" placeholder="type a number" id="Quantity">
+                                <button onclick="Quantity('num11')" id="Confirm">Confirm</button>
+                                <br>
+                                <h1>_____________________________________</h1>
+                                <h1><u>Location :</u></h1>
+                                <input id="num11" type="" placeholder="type your location" id="Location">
+                                <button onclick="location('num11')" id="ConfirmLocation">Confirm</button>
+                                <br>
+                                <button onclick="SuccessfullOrder('ChickenPpopup', 'orderedText11')"
+                                    id="Complete">Complete
+                                    Order</button>
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+            <footer>
+                <p class="float-end"><a href="#">Back to top</a></p>
+                <p>&copy; 2017–2024 Abou Reyad El Soury <a href="https://www.facebook.com/aboreyadalsory/"> <img
+                            src="./facebook.jpg" id="facebookphoto"></a> </Inc> &middot; <a href="#">Privacy</a>
+                    &middot; <a href="#">Terms</a></p>
+            </footer>
+
+            <script src="./Main.js"></script>
+</body>
+
+</html>
